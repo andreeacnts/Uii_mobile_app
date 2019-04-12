@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".jogging">
+
+    <View
+        android:layout_width="700dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="56dp"
+        android:background="#00995c"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/position_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/position_right"
+        app:layout_constraintStart_toEndOf="@+id/position_left"
+        app:layout_constraintTop_toBottomOf="@+id/position_forward"
+        app:srcCompat="@drawable/down" />
+
+    <ImageButton
+        android:id="@+id/position_forward"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/position"
+        app:srcCompat="@drawable/up" />
+
+    <ImageButton
+        android:id="@+id/position_left"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="120dp"
+        android:layout_marginTop="120dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/position_right"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/left" />
+
+    <ImageButton
+        android:id="@+id/position_right"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="120dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="120dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/position_left"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/right" />
+
+    <ImageButton
+        android:id="@+id/position_up"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/position_forward"
+        app:layout_constraintTop_toTopOf="@+id/position_forward"
+        app:srcCompat="@drawable/up" />
+
+    <ImageButton
+        android:id="@+id/position_down"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="96dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/position_back"
+        app:layout_constraintEnd_toEndOf="@+id/position_up"
+        app:layout_constraintTop_toBottomOf="@+id/position_up"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/down" />
+
+    <ImageButton
+        android:id="@+id/open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/tool"
+        app:layout_constraintTop_toTopOf="@+id/position_up"
+        app:srcCompat="@drawable/open" />
+
+    <ImageButton
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/position_down"
+        app:layout_constraintStart_toStartOf="@+id/open"
+        app:layout_constraintTop_toBottomOf="@+id/open"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/close" />
+
+    <ImageButton
+        android:id="@+id/orientation_down"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="99dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/rotation_left"
+        app:layout_constraintStart_toStartOf="@+id/orientation_up"
+        app:layout_constraintTop_toBottomOf="@+id/orientation_up"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/down" />
+
+    <ImageButton
+        android:id="@+id/orientation_up"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/orientation"
+        app:layout_constraintTop_toTopOf="@+id/open"
+        app:srcCompat="@drawable/up" />
+
+    <ImageButton
+        android:id="@+id/orientation_left"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/orientation_right"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toEndOf="@+id/position_right"
+        app:layout_constraintTop_toTopOf="@+id/orientation_right"
+        app:srcCompat="@drawable/left" />
+
+    <ImageButton
+        android:id="@+id/orientation_right"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/rotation_right"
+        app:layout_constraintEnd_toEndOf="@+id/rotation_right"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/orientation_up"
+        app:srcCompat="@drawable/right" />
+
+    <ImageButton
+        android:id="@+id/rotation_left"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/close"
+        app:layout_constraintEnd_toStartOf="@+id/orientation_down"
+        app:srcCompat="@drawable/left_arrow" />
+
+    <ImageButton
+        android:id="@+id/rotation_right"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/orientation_down"
+        app:layout_constraintStart_toEndOf="@+id/orientation_down"
+        app:srcCompat="@drawable/right_arrow" />
+
+    <TextView
+        android:id="@+id/position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/position"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginStart="150dp"
+        android:text="@string/gripper_action"
+        app:layout_constraintStart_toEndOf="@+id/position"
+        app:layout_constraintTop_toTopOf="@+id/position" />
+
+    <TextView
+        android:id="@+id/orientation"
+        android:layout_width="89dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginStart="130dp"
+        android:text="@string/orientation"
+        app:layout_constraintStart_toEndOf="@+id/tool"
+        app:layout_constraintTop_toTopOf="@+id/tool" />
+
+    <ImageButton
+        android:id="@+id/next"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/tonext" />
+
+    <ImageButton
+        android:id="@+id/previous"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/toprevious" />
+
+    <ImageButton
+        android:id="@+id/save_action"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/previous"
+        app:srcCompat="@drawable/save_action" />
+
+    <SeekBar
+        android:id="@+id/speed"
+        style="@android:style/Widget.Material.SeekBar.Discrete"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:max="100"
+        android:progress="30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/next" />
+
+    <ImageButton
+        android:id="@+id/free_drive"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="130dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/position_right"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/free_drive" />
+</android.support.constraint.ConstraintLayout>

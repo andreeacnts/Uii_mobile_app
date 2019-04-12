@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Uii</string>
+    <string name="position">Position</string>
+    <string name="orientation">Orientation</string>
+    <string name="gripper_action">Tool action</string>
+    <string name="row1">Point1</string>
+</resources>
